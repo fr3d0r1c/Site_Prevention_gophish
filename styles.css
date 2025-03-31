@@ -1,57 +1,76 @@
+/* Styles généraux */
 body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-        .alert-container {
-            background-color: #ffcccc;
-            border: 1px solid #ff0000;
-            padding: 30px;
-            width: 80%;
-            max-width: 600px;
-            text-align: center;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+.alert-container {
+    background-color: #ffcccc;
+    border: 1px solid #ff0000;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
 
-        h1 {
-            color: #d32f2f;
-        }
+h1 {
+    color: #d32f2f;
+}
 
-        p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
 
-        .btn {
-            background-color: #d32f2f;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            font-weight: bold;
-            margin-top: 20px;
-        }
+.btn {
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 20px;
+}
 
-        .btn:hover {
-            background-color: #b71c1c;
-        }
+.btn:hover {
+    background-color: #b71c1c;
+}
 
-        .important {
-            color: #d32f2f;
-            font-weight: bold;
-        }
+.important {
+    color: #d32f2f;
+    font-weight: bold;
+}
 
-        .info {
-            margin-top: 20px;
-            font-size: 1.1em;
-            color: #555;
-        }
+.info {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Animation de clignotement */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink-animation {
+    animation: blink 1s linear infinite;
+}
